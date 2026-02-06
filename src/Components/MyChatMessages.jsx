@@ -20,7 +20,7 @@ export function MYChatMessages({ message, sender, isTyping,time }) {
                   <img className="rounded-circle me-2 border border-dark" src={robot} style={{ width: "40px", height: "40px", objectFit: "cover" }} />
                 </div>
                 {isTyping ? (<img src={spinner}
-                  style={{ width: 100 }} />) : <div className=" border border-dark   bg-success rounded text-light fw-bold text-center p-3">
+                  style={{ width: 100 }} />) : <div className=" border border-dark   bg-danger rounded text-light fw-bold text-center p-3">
                   {message}
                   <div className="text-end text-light opacity-75" style={{ fontSize: "0.75rem" }}>
     {time}
@@ -39,7 +39,7 @@ export function MYChatMessages({ message, sender, isTyping,time }) {
           <div className="row">
             <div className="col-sm-12">
               <div className="d-flex flex-row justify-content-end">
-                <div className=" border border-dark   bg-success rounded text-light fw-bold text-center p-3">
+                <div className=" border border-dark   bg-danger rounded text-light fw-bold text-center p-3">
                   {message}
                   <div className="text-end text-light opacity-75" style={{ fontSize: "0.75rem" }}>
     {time}

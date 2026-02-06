@@ -55,7 +55,7 @@ export function ChatInput({  setChatMessages, setIsTyping }) {
           <div className="col-sm-4"></div>
           <div className="col-sm-4 d-flex flex-row justify-content-center">
             <input
-              className="form-control border border-success"
+              className="form-control border border-danger"
               placeholder="type a message"
               value={inputText}
               onChange={e => setInputText(e.target.value)}
@@ -64,7 +64,7 @@ export function ChatInput({  setChatMessages, setIsTyping }) {
             />
             <button
               type="button"
-              className="ms-2 btn btn-success"
+              className="ms-2 btn btn-danger"
               onClick={sendMessage}
             >
               send
